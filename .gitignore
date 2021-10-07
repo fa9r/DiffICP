@@ -1,0 +1,17 @@
+*.pkl
+*.obj
+__pycache__/
+.idea/
+tmp.py
+/official_model/
+/ply/
+/vids/
+/data/
+/runs/
+/models/
+/results/
+/eval_results/
+/icp_results/
+/scannet_results/
+/metrics.csv
+/disko.egg-info/
