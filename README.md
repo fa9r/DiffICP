@@ -48,6 +48,8 @@ pip install -e .
 If you want to perform rigid ICP, just import our `ICP6DoF`, initialize
 an object, and run it on your point clouds or depth maps:
 ```python
+from difficp import ICP6DoF
+
 icp = ICP6DoF(differentiable=True, ...)
 rigid_pose = icp(sources, targets, ...)
 ```
@@ -58,6 +60,8 @@ See arguments of `ICP.__init__()` and `ICP.__call__()` in
 If you need non-rigid ICP, you can build it on your own by subclassing
 `difficp.icp.icp.ICP` and overwriting it's abstract methods:
 ```python
+from difficp import ICP
+
 class MyNonRigidICP(ICP):
 
     def define_num_params(self):
