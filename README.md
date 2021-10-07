@@ -24,11 +24,11 @@ we used DiffICP for end-to-end 3D reconstruction.
 * tqdm 4.62.3
 
 ### Optional Requirements for `io_utils.py`
-* numpy==1.21.2
-* imageio==2.9.0
-* pandas==1.3.3
-* opencv-python==4.5.3.56
-* pyntcloud==0.1.5
+* numpy 1.21.2
+* imageio 2.9.0
+* pandas 1.3.3
+* opencv-python 4.5.3.56
+* pyntcloud 0.1.5
 
 ## Setup
 ### Installation
