@@ -87,7 +87,7 @@ non-rigid LM optimizer defined in `difficp.icp.optimizer.LMOptimizerSMPL`.
 - `difficp/` is the sources root.
 - `difficp/icp/` contains the differentiable ICP PyTorch implementation,
 split into several modules.
-  - `difficp/icp/icp.py` contains the main ICP logic
+  - `difficp/icp/icp.py` contains the main ICP logic.
     - `difficp.icp.icp.ICP6DoF` is the most important class, which performs
 rigid ICP.
     - `difficp.icp.icp.ICP` is an abstract class which `ICP6DoF` inherits from.
@@ -95,26 +95,26 @@ You can subclass it to build custom non-rigid ICPs.
   - `difficp/icp/correspondence_function.py` contains functions for
 correspondence finding, weighting, and rejection.
   - `difficp/icp/distance_function.py` contains ICP distance functions
-(point-to-point, point-to-plane, Symmetric ICP)
+(point-to-point, point-to-plane, Symmetric ICP).
   - `difficp/icp/optimizer.py` contains a custom LM optimizer than can be
-used to minimize the distance functions
+used to minimize the distance functions.
   - `difficp/icp/procrustes_solver.py` contains both an analytical
 procrustes solver for point-to-point, based on SVD, and a
 linear solver that can be used to minimize any of the three distance
-functions (or a combination of them)
+functions (or a combination of them).
   - `difficp/icp/linear_solver.py` contains a differentiable solver
 for linear equations based on LU-decomposition.
 This is used internally by both the LM optimizer and the linear solver.
-- `difficp/tests/` contains unit tests
+- `difficp/tests/` contains unit tests.
 - `difficp/utils/` contains all kinds of util functions for:
-  - 3D geometry (`geometry_utils.py`)
-  - Depth map reprojection (`depthmap_utils.py`)
-  - Normal calculation (`normal_utils.py`)
-  - Saving/Loading point clouds, depth maps, or other data (`io_utils.py`)
+  - 3D geometry (`geometry_utils.py`),
+  - Depth map reprojection (`depthmap_utils.py`),
+  - Normal calculation (`normal_utils.py`),
+  - Saving/Loading point clouds, depth maps, or other data (`io_utils.py`).
 
 Note for `difficp/utils/`: Some util functions are used by the ICP, but
 most are just intended as supplementary code that you can use to
-preprocess your data before you can give it to the ICP.
+load/preprocess your data before you give it to the ICP.
 
 ## Citation
 If you use this code in your research, please cite it as follows:
